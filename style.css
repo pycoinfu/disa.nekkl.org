@@ -19,8 +19,7 @@ p {
 }
 
 .reviews {
-	margin-bottom: 150px;
-	padding: 0;
+	margin-bottom: 175px;
 }
 li {
 	float: left;
@@ -29,13 +28,15 @@ li p {
 	display: inline;
 	color: white;
 	text-align: center;
-	padding: 0px 16px;
+	padding: 0px 20px;
 	text-decoration: none;
+	margin: 10px;
 }
 
 h2 {
 	color: rgb(120, 120, 120);
 	margin: 0;
+	margin-left: 10px;
 }
 
 hr {
