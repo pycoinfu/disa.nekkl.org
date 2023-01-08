@@ -1,0 +1,43 @@
+body {
+	background-color: black;
+}
+
+.header {
+	font-size: 500%;
+	color: rgb(120, 120, 120);
+	text-align: center;
+}
+.b0 {
+	color: rgb(100, 180, 240);
+}
+.b1 {
+	color: rgb(100, 240, 180);
+}
+
+p {
+	color: rgb(240, 240, 240);
+}
+
+.reviews {
+	margin: 0;
+	padding: 0;
+}
+li {
+	float: left;
+}
+li p {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0px 16px;
+	text-decoration: none;
+}
+
+h2 {
+	color: rgb(120, 120, 120);
+	margin: 0px 80px;
+	text-align: left;
+}
+.confucius p {
+	margin: 0%;
+}
