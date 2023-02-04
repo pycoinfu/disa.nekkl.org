@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+    --background-color: #1a1a1d;
+    --navbar-color: #4e4e50;
+    --text-color: rgb(230, 230, 230);
+    --about-me-background-color: #c3073f;
+    --projects-background-color: #950740;
+    --footer-background-color: #6f2232;
+}
+
+body {
+    background: var(--background-color);
+    margin: 0;
+    font-family: "Poppins";
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section.navbar {
+    background-color: var(--navbar-color);
+    padding: 1em;
+    
+    .logo {
+        margin: 0.2em;
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+}
+
+section.hero {
+    margin: 20em 0%;
+    display: flex;
+    justify-content: center;
+
+    .hero-text {
+        text-align: center;
+        color: var(--text-color);
+        font-size: 2.5em;
+    }
+}
+
+.section-header {
+    text-align: center;
+    font-size: 2em;
+    border-radius: 1em;
+    margin: auto;
+    margin-bottom: -2em;
+    padding-bottom: 1.5em;
+    width: 8em;
+}
+
+section.about-me {
+    .about-me-header {
+        background: var(--about-me-background-color);
+    }
+
+    .about-me-text {
+        text-align: center;
+        background-color: var(--about-me-background-color);
+        margin: 0;
+        padding: 2em;
+        padding-bottom: 3.5em;
+        font-size: 1.5em;
+        margin-bottom: -2em;
+    }
+}
+
+section.projects {
+    color: rgb(187, 187, 187);
+
+    .projects-header {
+        background: var(--projects-background-color);
+    }
+    .projects-text {
+        text-align: center;
+        background-color: var(--projects-background-color);
+        margin: 0;
+        padding: 2em;
+        font-size: 1.5em;
+    }
+    ul.project-list {
+        margin: 0;
+        background: var(--projects-background-color);
+        list-style-type: none;
+
+        li.project {
+            text-align: center;
+            padding-bottom: 1em;
+            width: 97%;
+
+            img.project-image {
+                border-radius: 1em;
+                display: inline;
+                margin-left: auto;
+                margin-right: auto;                
+            }
+            .project-title {
+                font-size: 1.5em;
+                text-align: center;
+                padding: 0.3em 0;
+            }
+            .github {
+                display: inline;
+            }
+        }
+    }
+}
+
+section.footer {
+    background: var(--footer-background-color);
+    text-align: center;
+
+    .footer-copyright {
+        margin: 0;
+        padding: 1em;
+    }
+}
+
+// @media only screen and (min-width: 400) {
+//     ul.project-list {
+//         display: flex;
+//         justify-content: space-around;
+//     }
+// }

@@ -1,47 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>cool website</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pycoinfu</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1 class="header">
-		this is my we<span class="b0">b</span>site
-	</h1>
-	<ul class="reviews">
-		<li><p>"amazing website"<br>- bydariogamer</p></li>
-		<li><p>"truly a holy design"<br>- walking L</p></li>
-		<li>
-			<h2>"this website is beyond incredi<span class="b1">b</span>le"</h2>
-			<p>- confucius, 534 BC</p>
-		</li>
-	</ul>
+    <section class="navbar">
+        <div class="container">
+            <a href="#" class="logo">pycoinfu</a>
+        </div>
+    </section>
 
-	<hr>
+    <section class="hero">
+        <h1 class="hero-text">I'm just a guy (mostly)</h1>
+    </section>
 
-	<h1 class="my-games">my games and stuff</h1>
-	<hr>
+    <section class="about-me">
+        <div class="section-header about-me-header">
+            about me
+        </div>
+        <p class="about-me-text">
+            as said above, I'm just a guy who is interested in programming.
+            I started my programming journey by learning Python, and later the Pygame library.
+            as of now, I am interested in learning front-end web development
+            (this website is my first project in this field!)
+        </p>
+    </section>
 
-	<div class="social-links">
-		<a href="https://github.com/pycoinfu">my github</a><br> 
-		<a href="https://coinfu.itch.io">my itch.io</a>
-	</div>
+    <section class="projects">
+        <div class="section-header projects-header">
+            my projects
+        </div>
+        <p class="projects-text">
+            here's a li'l list of the projects I've made along the way :)
+        </p>
+        <ul class="project-list">
+            <li class="project">
+                <img class="project-image" src="assets/pygame-platformer.png" alt="Screenshot of pygame platformer">
+                <div class="project-title">my Pygame platformer</div>
+                <a href="https://github.com/pycoinfu/pygame_platformer">
+                    <img class="github" src="assets/github.png" alt="Pygame Platformer on GitHub">
+                </a>
+                </div>
+            </li>
+            <li class="project">
+                <img class="project-image" src="assets/pygame-platformer.png" alt="Screenshot of pygame platformer">
+                <div class="project-title">my Pygame platformer</div>
+                <a href="https://github.com/pycoinfu/pygame_platformer">
+                    <img class="github" src="assets/github.png" alt="Pygame Platformer on GitHub">
+                </a>
+            </li>
+        </ul>
+    </section>
 
-	<ul class="games">
-		<li>
-			<div class="links">
-				<h1>Dave's Anniversary</h1>
-				<a href="https://github.com/blankRiot96/Daves-Anniversary">github</a> 
-				<a href="https://sss-says-snek.itch.io/daves-anniversary">itch.io</a>
-			</div>
-		</li>
-		<li>
-			<div class="links">
-				<h1>Don't collide with the triangular objects</h1>
-				<a href="https://github.com/pycoinfu/Dont-collide-with-the-triangular-objects">github</a>
-			</div>
-		</li>
-	</ul>
+    <section class="footer">
+        <h1 class="footer-copyright">© pycoinfu</h1>
+    </section>
 </body>
 </html>
