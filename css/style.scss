@@ -91,12 +91,11 @@ section.projects {
         background: var(--projects-background-color);
         list-style-type: none;
         display: flex;
-        justify-content: space-around;
 
         .project {
             text-align: center;
             padding-bottom: 1em;
-            width: 97%;
+            width: 100%;
 
             img.project-image {
                 border-radius: 1em;
@@ -129,6 +128,6 @@ section.footer {
 
 @media only screen and (min-width: 768) {
     ul.project-list {
-        display: block;
+        display: none;
     }
 }

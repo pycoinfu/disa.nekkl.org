@@ -86,12 +86,11 @@ section.projects ul.project-list {
   background: var(--projects-background-color);
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
 }
 section.projects ul.project-list .project {
   text-align: center;
   padding-bottom: 1em;
-  width: 97%;
+  width: 100%;
 }
 section.projects ul.project-list .project img.project-image {
   border-radius: 1em;
@@ -120,6 +119,6 @@ section.footer .footer-copyright {
 
 @media only screen and (min-width: 768) {
   ul.project-list {
-    display: block;
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
