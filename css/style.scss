@@ -98,6 +98,7 @@ section.projects {
             width: 100%;
 
             img.project-image {
+                border: var(--footer-background-color) solid 0.2em;
                 border-radius: 1em;
                 display: inline;
                 margin-left: auto;

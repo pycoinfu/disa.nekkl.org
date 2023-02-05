@@ -92,6 +92,7 @@ section.projects ul.project-list .project {
   width: 100%;
 }
 section.projects ul.project-list .project img.project-image {
+  border: var(--footer-background-color) solid 0.2em;
   border-radius: 1em;
   display: inline;
   margin-left: auto;
