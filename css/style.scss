@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+
 :root {
     --background-color: #472D2D;
     --navbar-color: #784A3F;
@@ -90,7 +91,6 @@ section.projects {
         padding: 0;
         background: var(--projects-background-color);
         list-style-type: none;
-        display: flex;
 
         .project {
             text-align: center;
@@ -126,8 +126,8 @@ section.footer {
     }
 }
 
-@media only screen and (min-width: 768) {
+@media (min-width: 768px) {
     ul.project-list {
-        display: block;
+        display: flex;
     }
 }

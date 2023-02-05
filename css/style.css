@@ -85,7 +85,6 @@ section.projects ul.project-list {
   padding: 0;
   background: var(--projects-background-color);
   list-style-type: none;
-  display: flex;
 }
 section.projects ul.project-list .project {
   text-align: center;
@@ -117,8 +116,8 @@ section.footer .footer-copyright {
   padding: 1em;
 }
 
-@media only screen and (min-width: 768) {
+@media (min-width: 768px) {
   ul.project-list {
-    display: block;
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
