@@ -126,7 +126,7 @@ section.footer {
     }
 }
 
-@media (min-width: 596px) or (orientation: landscape) {
+@media (min-width: 596px) and (orientation: landscape) {
     ul.project-list {
         display: flex;
     }

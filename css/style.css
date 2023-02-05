@@ -116,7 +116,7 @@ section.footer .footer-copyright {
   padding: 1em;
 }
 
-@media (min-width: 596px) {
+@media (min-width: 596px) and (orientation: landscape) {
   ul.project-list {
     display: flex;
   }
