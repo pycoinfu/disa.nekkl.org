@@ -36,7 +36,7 @@ section.navbar {
 }
 
 section.hero {
-    margin: 20em 0%;
+    margin: 10em 0%;
     display: flex;
     justify-content: center;
 
@@ -128,6 +128,10 @@ section.footer {
 
 @media (min-width: 596px) and (orientation: landscape) {
     ul.project-list {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section.hero {
+        margin: 20em 0;
     }
 }
