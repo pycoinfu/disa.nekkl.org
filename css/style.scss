@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-    --background-color: #1a1a1d;
-    --navbar-color: #4e4e50;
-    --text-color: rgb(230, 230, 230);
-    --about-me-background-color: #c3073f;
-    --projects-background-color: #950740;
-    --footer-background-color: #6f2232;
+    --background-color: #472D2D;
+    --navbar-color: #784A3F;
+    --text-color: #E8F1F2;
+    --about-me-background-color: #A66C4B;
+    --about-me-text-color: #000000;
+    --projects-background-color: #784A3F;
+    --projects-text-color: #E8F1F2;
+    --footer-background-color: #472D2D;
+    --footer-text-color: #c7c7c7;
 }
 
 body {
@@ -70,7 +73,7 @@ section.about-me {
 }
 
 section.projects {
-    color: rgb(187, 187, 187);
+    color: var(--projects-text-color);
 
     .projects-header {
         background: var(--projects-background-color);
@@ -84,10 +87,13 @@ section.projects {
     }
     ul.project-list {
         margin: 0;
+        padding: 0;
         background: var(--projects-background-color);
         list-style-type: none;
+        display: flex;
+        justify-content: space-around;
 
-        li.project {
+        .project {
             text-align: center;
             padding-bottom: 1em;
             width: 97%;
@@ -113,6 +119,7 @@ section.projects {
 section.footer {
     background: var(--footer-background-color);
     text-align: center;
+    color: var(--footer-text-color);
 
     .footer-copyright {
         margin: 0;
@@ -120,9 +127,8 @@ section.footer {
     }
 }
 
-// @media only screen and (min-width: 400) {
-//     ul.project-list {
-//         display: flex;
-//         justify-content: space-around;
-//     }
-// }
+@media only screen and (min-width: 768) {
+    ul.project-list {
+        display: block;
+    }
+}
