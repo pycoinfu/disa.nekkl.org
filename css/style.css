@@ -119,6 +119,6 @@ section.footer .footer-copyright {
 
 @media only screen and (min-width: 768) {
   ul.project-list {
-    display: none;
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
