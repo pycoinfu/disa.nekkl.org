@@ -1,138 +1,133 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 
 :root {
-    --background-color: #472D2D;
-    --navbar-color: #784A3F;
-    --text-color: #E8F1F2;
-    --about-me-background-color: #A66C4B;
-    --about-me-text-color: #000000;
-    --projects-background-color: #784A3F;
-    --projects-text-color: #E8F1F2;
-    --footer-background-color: #472D2D;
-    --footer-text-color: #c7c7c7;
+    --background-color-1: #f5d5bd;
+    --background-color-2: #c3a38a;
+    --header-color: #d3b095;
+    --text-color: #171717;
+    --link-color: #20394f;
+    --footer-color: #4e495f;
 }
 
 body {
-    background: var(--background-color);
     margin: 0;
-    font-family: "Poppins";
-}
-body::-webkit-scrollbar {
-    display: none;
-}
-
-section.navbar {
-    background-color: var(--navbar-color);
-    padding: 1em;
-    
-    .logo {
-        margin: 0.2em;
-        color: var(--text-color);
-        text-decoration: none;
-        font-size: 2.5em;
-        font-weight: bold;
-    }
+    font-family: "Open Sans";
+    color: var(--text-color);
+    background-attachment: fixed !important;
+    background: linear-gradient(var(--background-color-1), var(--background-color-2));
 }
 
-section.hero {
-    margin: 10em 0%;
-    display: flex;
-    justify-content: center;
-
-    .hero-text {
-        text-align: center;
-        color: var(--text-color);
-        font-size: 2.5em;
-    }
+hr {
+    height: 2px;
+    width: 60%;
+    background-color: var(--text-color);
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: var(--link-color);
 }
 
-.section-header {
+section.header {
+    background: var(--header-color);
     text-align: center;
-    font-size: 2em;
-    border-radius: 1em;
-    margin: auto;
-    margin-bottom: -2em;
-    padding-bottom: 1.5em;
-    width: 8em;
-}
+    
+    nav {
+        .logo {
+            margin: 0em;
+            font-size: 2em;
+            text-align: center;
+        }
 
-section.about-me {
-    .about-me-header {
-        background: var(--about-me-background-color);
+        ul.navbar {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+
+            .navbar-btn {
+                padding: 0.1em 0em;
+                font-size: 1.8em;
+            }
+        }
     }
 
-    .about-me-text {
-        text-align: center;
-        background-color: var(--about-me-background-color);
-        margin: 0;
-        padding: 2em;
-        padding-bottom: 3.5em;
-        font-size: 1.5em;
-        margin-bottom: -2em;
+    p.about-me {
+        margin: 0 auto;
+        padding: 0 0 0.5em;
+        max-width: 50%;
+        font-size: 1.2em;
     }
 }
-
+.navbar-transition {
+    height: 0.2em;
+    background: linear-gradient(var(--header-color), #ebcbb3);
+}
 section.projects {
-    color: var(--projects-text-color);
+    text-align: center;
 
-    .projects-header {
-        background: var(--projects-background-color);
+    h1 {
+        margin: 0.4em;
+        font-size: 2.1em;
     }
-    .projects-text {
-        text-align: center;
-        background-color: var(--projects-background-color);
-        margin: 0;
-        padding: 2em;
-        font-size: 1.5em;
-    }
-    ul.project-list {
-        margin: 0;
+        
+    ul.projects {
         padding: 0;
-        background: var(--projects-background-color);
-        list-style-type: none;
 
         .project {
+            list-style-type: none;
             text-align: center;
-            padding-bottom: 1em;
             width: 100%;
 
-            img.project-image {
-                border: var(--footer-background-color) solid 0.2em;
+            img.project-img {
                 border-radius: 1em;
                 display: inline;
                 margin-left: auto;
                 margin-right: auto;
             }
-            .project-title {
+            p.project-description {
+                margin: 0;
                 font-size: 1.5em;
-                text-align: center;
-                padding: 0.3em 0;
             }
-            .github {
-                display: inline;
-            }
+            img.github {
+                padding: 0.3em;
+            }   
         }
     }
 }
+.footer-transition {
+    height: 0.2em;
+    background: linear-gradient(var(--background-color-2), var(--footer-color))
+}
 
-section.footer {
-    background: var(--footer-background-color);
+footer {
+    padding: 1em;
+    background: var(--footer-color);
     text-align: center;
-    color: var(--footer-text-color);
 
-    .footer-copyright {
+    h1.copyright {
         margin: 0;
-        padding: 1em;
+        color: var(--background-color-1);
     }
 }
 
+@media (min-width: 530px) {
+    .logo {
+        font-size: 4em !important;
+    }
+    .navbar-btn {
+        padding: 1.05em 1em !important;
+    }
+}
 @media (min-width: 596px) and (orientation: landscape) {
-    ul.project-list {
+    hr {
+        width: 30%;
+        margin: 1em auto;
+    }
+    ul.projects {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-    section.hero {
-        margin: 20em 0;
+        margin: 0 4em;
     }
 }
