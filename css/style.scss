@@ -55,7 +55,8 @@ section.header {
 
     p.about-me {
         margin: 0 auto;
-        padding: 0 0 0.5em;
+        padding: 0.7em 0.5em;
+        padding-bottom: 1.6em;
         max-width: 50%;
         font-size: 1.2em;
     }
@@ -81,6 +82,7 @@ section.projects {
             width: 100%;
 
             img.project-img {
+                margin-top: 1em;
                 border-radius: 1em;
                 display: inline;
                 margin-left: auto;
@@ -107,7 +109,7 @@ footer {
     text-align: center;
 
     h1.copyright {
-        margin: 0;
+        margin: 1.2em 0;
         color: var(--background-color-1);
     }
 }
