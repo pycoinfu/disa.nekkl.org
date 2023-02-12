@@ -34,25 +34,24 @@ section.header {
 }
 section.header nav .logo {
   margin: 0em;
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
 }
 section.header nav ul.navbar {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 section.header nav ul.navbar .navbar-btn {
-  padding: 0.1em 0em;
+  padding: 0.1em 0;
   font-size: 1.8em;
 }
 section.header p.about-me {
   margin: 0 auto;
   padding: 0.7em 0.5em;
   padding-bottom: 1.6em;
-  max-width: 50%;
+  max-width: 80%;
   font-size: 1.2em;
 }
 
@@ -107,14 +106,22 @@ footer h1.copyright {
 }
 
 @media (min-width: 530px) {
-  .logo {
-    font-size: 4em !important;
+  ul.navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex !important;
+    justify-content: center !important;
   }
-  .navbar-btn {
+  ul.navbar .navbar-btn {
     padding: 1.05em 1em !important;
+    font-size: 1.8em;
+  }
+  p.about-me {
+    max-width: 50%;
   }
 }
-@media (min-width: 596px) and (orientation: landscape) {
+@media (orientation: landscape) {
   hr {
     width: 30%;
     margin: 1em auto;
