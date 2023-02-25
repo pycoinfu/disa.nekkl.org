@@ -63,6 +63,13 @@ button.border-btn:hover {
   font-weight: bold;
 }
 
+footer {
+  padding: 4rem;
+  text-align: center;
+  color: white;
+  background: rgb(49, 49, 49);
+}
+
 @media screen and (max-width: 728px) {
   nav {
     display: none !important;
