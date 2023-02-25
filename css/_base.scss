@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0
+}
+
+$color-nav-border: gray;
+$color-text: black;
+
+body {
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button.border-btn {
+    background: none;
+    border: 2px solid $color-nav-border;
+    border-radius: 0.2rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin: -1rem 0;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button.border-btn:hover {
+    padding: 0 2rem;
+}
+
+.navbar {
+    display: flex;
+    border-bottom: 1px solid $color-nav-border;
+    padding: 1.6rem 4rem;
+
+    .logo {
+        flex-basis: 30%;
+
+        a {
+            color: $color-text;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+
+        a:hover {
+            font-size: large;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        color: $color-text;
+        flex-basis: 70%;
+
+        a {
+            color: $color-text;
+            margin: 0 3rem;
+            transition: 0.5s;
+        }
+
+        a:hover {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 728px){
+    nav {
+        display: none !important;
+    }
+}

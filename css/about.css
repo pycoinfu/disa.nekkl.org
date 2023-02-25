@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button.border-btn {
+  background: none;
+  border: 2px solid gray;
+  border-radius: 0.2rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin: -1rem 0;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button.border-btn:hover {
+  padding: 0 2rem;
+}
+
+.navbar {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding: 1.6rem 4rem;
+}
+.navbar .logo {
+  flex-basis: 30%;
+}
+.navbar .logo a {
+  color: black;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.navbar .logo a:hover {
+  font-size: large;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  flex-basis: 70%;
+}
+.navbar nav a {
+  color: black;
+  margin: 0 3rem;
+  transition: 0.5s;
+}
+.navbar nav a:hover {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 728px) {
+  nav {
+    display: none !important;
+  }
+}
+hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: auto;
+  width: 40vh;
+}
+
+.navbar {
+  background: wheat;
+}
+
+main {
+  padding: 1rem;
+  padding-bottom: 24rem;
+  text-align: center;
+}
+main h5 {
+  margin: 0.5rem 0;
+}
+main p.text {
+  font-size: 1.2rem;
+  max-width: 50vw;
+  margin: 0.8rem auto;
+  margin-bottom: 2rem;
+}
+main img {
+  margin: 0 0.4rem;
+}
+
+footer {
+  padding: 4rem;
+  text-align: center;
+  color: white;
+  background: rgb(49, 49, 49);
+}/*# sourceMappingURL=about.css.map */
