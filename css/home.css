@@ -17,7 +17,7 @@ a {
 
 button.border-btn {
   background: none;
-  border: 2px solid gray;
+  border: 2px solid grey;
   border-radius: 0.2rem;
   font-family: "Montserrat";
   font-weight: bold;
@@ -33,7 +33,7 @@ button.border-btn:hover {
 
 .navbar {
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid grey;
   padding: 1.6rem 4rem;
 }
 .navbar .logo {
@@ -131,7 +131,7 @@ main .main-right {
   background-image: url("../assets/guy.png");
   background-repeat: no-repeat;
   background-position: top;
-  border-left: 1px solid gray;
+  border-left: 1px solid grey;
 }
 main .main-right h2 {
   text-align: right;

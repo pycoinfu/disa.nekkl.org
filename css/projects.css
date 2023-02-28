@@ -17,7 +17,7 @@ a {
 
 button.border-btn {
   background: none;
-  border: 2px solid gray;
+  border: 2px solid grey;
   border-radius: 0.2rem;
   font-family: "Montserrat";
   font-weight: bold;
@@ -33,7 +33,7 @@ button.border-btn:hover {
 
 .navbar {
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid grey;
   padding: 1.6rem 4rem;
 }
 .navbar .logo {
@@ -74,4 +74,29 @@ footer {
   nav {
     display: none !important;
   }
+}
+.project-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+  text-align: center;
+}
+.project-container .project {
+  background: 0;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: 0.5s;
+}
+.project-container .project img {
+  width: 15rem;
+  height: 15rem;
+  border: 2px solid grey;
+  border-radius: 6px;
+}
+.project-container .project a {
+  color: black;
+}
+.project-container .project:hover {
+  background: rgb(244, 244, 244);
 }/*# sourceMappingURL=projects.css.map */

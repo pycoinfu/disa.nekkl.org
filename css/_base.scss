@@ -4,8 +4,11 @@
     margin: 0
 }
 
-$color-nav-border: gray;
+$color-nav-border: grey;
 $color-text: black;
+$color-background-1: white;
+$color-background-2: wheat;
+$color-background-footer: rgb(49, 49, 49);
 
 body {
     font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -77,7 +80,7 @@ footer {
     padding: 4rem;
     text-align: center;
     color: white;
-    background: rgb(49, 49, 49);
+    background: $color-background-footer;
 }
 
 @media screen and (max-width: 728px){

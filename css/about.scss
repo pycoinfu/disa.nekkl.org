@@ -8,13 +8,14 @@ hr {
 }
 
 .navbar {
-    background: wheat;
+    background: base.$color-background-1;
 }
 
 main {
     padding: 1rem;
-    padding-bottom: 46vh;
+    padding-bottom: 51vh;
     text-align: center;
+    background: base.$color-background-1;
 
     h5 {
         margin: 0.5rem 0;

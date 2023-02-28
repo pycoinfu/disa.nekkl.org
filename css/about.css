@@ -17,7 +17,7 @@ a {
 
 button.border-btn {
   background: none;
-  border: 2px solid gray;
+  border: 2px solid grey;
   border-radius: 0.2rem;
   font-family: "Montserrat";
   font-weight: bold;
@@ -33,7 +33,7 @@ button.border-btn:hover {
 
 .navbar {
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid grey;
   padding: 1.6rem 4rem;
 }
 .navbar .logo {
@@ -83,13 +83,14 @@ hr {
 }
 
 .navbar {
-  background: wheat;
+  background: white;
 }
 
 main {
   padding: 1rem;
-  padding-bottom: 46vh;
+  padding-bottom: 51vh;
   text-align: center;
+  background: white;
 }
 main h5 {
   margin: 0.5rem 0;
