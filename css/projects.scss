@@ -3,45 +3,67 @@
 
 $project-background: rgb(244, 244, 244);
 
-.project-container {
-    margin: 2rem 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
-    text-align: center;
-    padding-bottom: 47vh;
+main {
+    .project-container {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3%;
+        text-align: center;
+        padding-bottom: 48vh;
 
-    .project {
-        background: 000;
-        border-radius: 8px;
-        padding: 1rem;
-        transition: 0.5s;
+        .project {
+            background: 000;
+            border-radius: 8px;
+            padding: 1rem;
+            transition: 0.5s;
 
-        a {
-            color: base.$color-text;
+            a {
+                color: base.$color-text;
 
-            img {
-                width: 15rem;
-                height: 15rem;
-                border: 2px solid base.$color-nav-border;
-                border-radius: 6px;
+                img {
+                    width: 15rem;
+                    height: 15rem;
+                    border: 2px solid base.$color-nav-border;
+                    border-radius: 6px;
+                }
+            }
+            p {
+                margin-top: 0.5rem;
+                transition: 0.5s;
             }
         }
-        p {
-            margin-top: 0.5rem;
-            transition: 0.5s;
+        .project:hover {
+            background: $project-background;
         }
-    }
-    .project:hover {
-        background: $project-background;
     }
 }
 
 span {
+    font-size: 1.1rem;
     opacity: 0;
     transition: 0.5s;
 }
 
 span.fade {
     opacity: 1;
+}
+
+@media screen and (min-width: 1280px) {
+    .project-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .project-container {
+        display: block !important;
+    }
 }

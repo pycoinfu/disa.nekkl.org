@@ -18,12 +18,14 @@ function animateDescription(element) {
     let char = 0;
     let timer = setInterval(() => {
         const span = element.querySelectorAll("span")[char];
-        span.classList.add("fade");
-        char++;
-        if (char === splitText.length) {
-            clearInterval(timer);
-            timer = null;
-            return;
+        if (span !== undefined) {
+            span.classList.add("fade");
+            char++;
+            if (char === splitText.length) {
+                clearInterval(timer);
+                timer = null;
+                return;
+        }
     }
     }, 1);
     
