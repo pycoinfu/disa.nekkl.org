@@ -9,6 +9,7 @@ $project-background: rgb(244, 244, 244);
     grid-template-columns: repeat(3, 1fr);
     gap: 3%;
     text-align: center;
+    padding-bottom: 47vh;
 
     .project {
         background: 000;
@@ -16,14 +17,19 @@ $project-background: rgb(244, 244, 244);
         padding: 1rem;
         transition: 0.5s;
 
-        img {
-            width: 15rem;
-            height: 15rem;
-            border: 2px solid base.$color-nav-border;
-            border-radius: 6px;
-        }
         a {
             color: base.$color-text;
+
+            img {
+                width: 15rem;
+                height: 15rem;
+                border: 2px solid base.$color-nav-border;
+                border-radius: 6px;
+            }
+        }
+        p {
+            margin-top: 0.5rem;
+            transition: 0.5s;
         }
     }
     .project:hover {

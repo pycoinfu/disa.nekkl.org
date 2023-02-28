@@ -81,6 +81,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 3%;
   text-align: center;
+  padding-bottom: 47vh;
 }
 .project-container .project {
   background: 0;
@@ -88,14 +89,18 @@ footer {
   padding: 1rem;
   transition: 0.5s;
 }
-.project-container .project img {
+.project-container .project a {
+  color: black;
+}
+.project-container .project a img {
   width: 15rem;
   height: 15rem;
   border: 2px solid grey;
   border-radius: 6px;
 }
-.project-container .project a {
-  color: black;
+.project-container .project p {
+  margin-top: 0.5rem;
+  transition: 0.5s;
 }
 .project-container .project:hover {
   background: rgb(244, 244, 244);
