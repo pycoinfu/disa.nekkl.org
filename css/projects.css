@@ -104,4 +104,13 @@ footer {
 }
 .project-container .project:hover {
   background: rgb(244, 244, 244);
+}
+
+span {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+span.fade {
+  opacity: 1;
 }/*# sourceMappingURL=projects.css.map */
